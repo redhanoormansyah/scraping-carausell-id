@@ -59,6 +59,11 @@
           {% for title in titles %}
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
+              <div class="card-header" style="text-align:center">
+                <a href="https://id.carousell.com{{title.findAll(attrs={'class':'_2ezhmqseeJ'})[1]['href']|safe}}" style="text-decoration:none">
+                 <h4>{{title.find('p',attrs={'class':'_1gJzwc_bJS _2NNa9Zomqk Rmplp6XJNu mT74Grr7MA nCFolhPlNA lqg5eVwdBz uxIDPd3H13 _30RANjWDIv'}).text|safe}}</h4>
+              </a>
+              </div>
               <a href="https://id.carousell.com{{title.findAll(attrs={'class':'_2ezhmqseeJ'})[1]['href']|safe}}">
                 <img src="{{ title.find('span',attrs={'class':'_3nH6adLACP _3k9K3fuPdS _14ECgRVNZW'}).find('img')['src']|safe}}" width="253px" height="250px"/>
               </a>
@@ -74,10 +79,9 @@
                     {{title.find('p',attrs={'class': '_1gJzwc_bJS _2rwkILN6KA Rmplp6XJNu mT74Grr7MA nCFolhPlNA lqg5eVwdBz _19l6iUes6V _3k5LISAlf6'}).text|safe}}
                   </a>
                 </h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
               </div>
               <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                  <p class="card-text"> {{title.find('p',attrs={'class': '_1gJzwc_bJS _2rwkILN6KA Rmplp6XJNu mT74Grr7MA nCFolhPlNA lqg5eVwdBz _19l6iUes6V _30RANjWDIv'}).text|safe}}</p>
               </div>
             </div>
 

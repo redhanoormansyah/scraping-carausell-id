@@ -16,11 +16,16 @@ beuty_populer = soup.find(attrs={'class':'_2RJeLsMmpi'})
 titles = beuty_populer.findAll(attrs={'class':'TpQXuJG_eo'})
 for title in titles:
     # Nama Barang
-    print(title.find('p',attrs={'class':'_1gJzwc_bJS _2rwkILN6KA Rmplp6XJNu mT74Grr7MA nCFolhPlNA lqg5eVwdBz uxIDPd3H13 _30RANjWDIv'}).text)
-    # Img
-    print(title.find('span',attrs={'class':'_3nH6adLACP _3k9K3fuPdS _14ECgRVNZW'}).find('img')['src'])
-    # Harga
-    print(title.find('p',attrs={'class': '_1gJzwc_bJS _2rwkILN6KA Rmplp6XJNu mT74Grr7MA nCFolhPlNA lqg5eVwdBz _19l6iUes6V _3k5LISAlf6'}).text)
+    # print(title.find('p',attrs={'class':'_1gJzwc_bJS _2rwkILN6KA Rmplp6XJNu mT74Grr7MA nCFolhPlNA lqg5eVwdBz uxIDPd3H13 _30RANjWDIv'}).text)
+    # # Img
+    # print(title.find('span',attrs={'class':'_3nH6adLACP _3k9K3fuPdS _14ECgRVNZW'}).find('img')['src'])
+    # # Harga
+    # print(title.find('p',attrs={'class': '_1gJzwc_bJS _2rwkILN6KA Rmplp6XJNu mT74Grr7MA nCFolhPlNA lqg5eVwdBz _19l6iUes6V _3k5LISAlf6'}).text)
+#     Nama Toko
+#     print(title.find('p',attrs={'class': '_1gJzwc_bJS _2NNa9Zomqk Rmplp6XJNu mT74Grr7MA nCFolhPlNA lqg5eVwdBz uxIDPd3H13 _30RANjWDIv'}).text)
+#     Deskripsi Barang
+    print(title.find('p',attrs={'class': '_1gJzwc_bJS _2rwkILN6KA Rmplp6XJNu mT74Grr7MA nCFolhPlNA lqg5eVwdBz _19l6iUes6V _30RANjWDIv'}).text)
+
 
 
 
