@@ -15,7 +15,6 @@ headers = ['Nama Toko', 'Nama Produk','Harga']
 writer.writerow(headers)
 
 
-
 titles = beuty_populer.findAll(attrs={'class':'TpQXuJG_eo'})
 for title in titles:
     #Nama Toko
